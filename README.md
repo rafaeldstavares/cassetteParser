@@ -4,7 +4,7 @@ The function cassetteParser uses the [IntegronFinder](https://doi.org/10.3390/mi
 
 Given that the bounderies of a cassette are context-driven, this function uses the integrase gene as a reference point and interprets cassettes by separation of the array string by *attC* sites position in the strand complementar to the intI (based on classical integron structure in which the integrase inversely orientated to the gene array), like so:
 
-<img src="image.png" alt="My Diagram" width="400">
+<img src="image.png" alt="My Diagram" width="700">
 
 
 
