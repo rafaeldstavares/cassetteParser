@@ -1,6 +1,6 @@
 Greetings, integron enthusiasts!!
 
-The function cassetteParser uses the [IntegronFinder](https://doi.org/10.3390/microorganisms10040700) output to identify the cassettes, i.e., coding sequences (CDS) and associated *attC* site.
+The function cassetteParser uses the [IntegronFinder](https://doi.org/10.3390/microorganisms10040700) output to identify the cassettes (i.e., coding sequences (CDS) and associated *attC* site) present in an integron array.
 
 Given that the bounderies of a cassette are context-driven, this function uses the integrase gene as a reference point and interprets cassettes by separation of the array string by *attC* sites position in the strand complementar to the *intI* (based on classical integron structure in which the integrase is inversely orientated to the gene array), like so:
 
