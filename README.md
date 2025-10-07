@@ -6,9 +6,13 @@ Given that the bounderies of a cassette are context-driven, this function uses t
 
 
 structure:  <intI1||----GC1-->|-------GC2------>|----GC3--->
+
 strand:       (-1)| (+1)| (+1)| (+1)| (+1)| (+1)| (+1)| (+1)
+
 array:        intI|CDS01|attC1|CDS02|CDS03|attC2|CDS04|attC3
+
 breaks:                       ^                 ^           ^
+
 cassettes:            GC1     |        GC2      |     GC3    
 
 
