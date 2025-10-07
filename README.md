@@ -29,7 +29,7 @@ If the annotation is provided by another software, the input requires the follow
 ## Output
 The output will be a table with two columns:
 - cds.id: It contains the identifiers of a single or multiple CDS that are contain a given cassette. This can be easily formatted to a CDS-by-row table using the function [separate_rows](https://tidyr.tidyverse.org/reference/separate_rows.html) from tidyverse. When available, the CDS encoding integrases are retained in the first 'cassette' (identified as a merge of the CDS code with '[intI]') to enable the identification of the relative position of the cassettes in the array.
-- attC.id: Contains a unique attC identifier based on the ID_replicon, ID_integron and *attC* numbering (replicon01__integron_1_001, replicon01__integron_1_002, replicon01__integron_2_001, ...).
+- attC.id: Contains a unique *attC* identifier based on the ID_replicon, ID_integron and *attC* numbering (replicon01__integron_1_001, replicon01__integron_1_002, replicon01__integron_2_001, ...).
 
 ## Required packages
 
