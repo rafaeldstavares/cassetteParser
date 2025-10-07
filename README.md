@@ -26,6 +26,15 @@ If the annotation is provided by another software, the input requires the follow
 - strand: in which strand is encoded a feature.
 - annotation: the integrase sequences must be identified with a string containing 'intI' (the annotation of other CDS can be later added to the output).
 
+## Output
+The output will be a table with two columns:
+- cds.id: It contains the identifiers of a single or multiple CDS that are contain a given cassette. This can be easily formatted to a CDS-by-row table using the function [separate_rows](https://tidyr.tidyverse.org/reference/separate_rows.html) from tidyverse. When available, the CDS encoding integrases are retained in the first 'cassette' (identified as a merge of the CDS code with '[intI]') to enable the identification of the relative position of the cassettes in the array.
+- attC.id: Contains a unique attC identifier based on the ID_replicon, ID_integron and *attC* numbering (replicon01__integron_1_001, replicon01__integron_1_002,replicon01__integron_2_001, ...).
+
+## Required packages
+
+- [tidyverse](https://cran.r-project.org/web/packages/tidyverse/index.html)
+
 ## Warning
 In the case of CALIN elements, because there is no integrase detected, this function assumes the integron structures is in the 'correct orientation' (i.e., |----GC1-->|-------GC2------>|----GC3--->).
 
